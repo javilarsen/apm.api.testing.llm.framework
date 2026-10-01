@@ -1,6 +1,6 @@
 import pytest
-from services.user_service import UserService
+from services.asset_template_client import AssetTemplateClient
 
 @pytest.fixture
-def user_service():
-    return UserService()
+def asset_client():
+    return AssetTemplateClient()
