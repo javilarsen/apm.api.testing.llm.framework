@@ -17,6 +17,7 @@ class TestAssetTemplateAPI:
         )
         return asset_client.generate_asset_template(request_data)
 
+       # Fixture to provide raw asset template data for tests
     @pytest.fixture
     def raw_asset_template_data(self, asset_client):
         equipment_name = "Motor"

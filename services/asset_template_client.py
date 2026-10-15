@@ -2,6 +2,8 @@ import time
 import requests
 from config.settings import settings
 from models.request_models import AssetTemplateRequest
+from typing import Optional
+import requests
 
 class AssetTemplateClient:
     def __init__(self, session: Optional[requests.Session] = None):

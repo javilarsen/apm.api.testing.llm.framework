@@ -27,3 +27,26 @@ class AssetTemplateResponse(BaseModel):
     offlineCondition: Optional[Any] = None
     failureModes: Optional[Any] = None
     Version: str
+
+class KPIResponse(BaseModel):
+    name: str
+    description: str
+    expression: str
+    uom: str
+    convertUoM: bool
+
+class DisplayGraphResponse(BaseModel):
+    name: str
+    description: str
+    expression: str
+    xLabel: str
+    xUoM: str
+    yLabel: str
+    yUoM: str
+    fixedRowCount: bool
+
+class FailureModeResponse(BaseModel):
+    libraryFailureModeId: str
+    name: str
+    description: str
+    extended: List[Any]
